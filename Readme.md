@@ -11,3 +11,9 @@ Install the dependencies and devDependencies and start the server.
 cd BaSP-M2022-Etapa-\
 npm install -g http-server
 ```
+## Week two
+The HTML code of the website was formed.
+
+## Week three
+
+The HTML code was styled.
