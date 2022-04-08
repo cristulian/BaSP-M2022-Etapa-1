@@ -11,9 +11,16 @@ Install the dependencies and devDependencies and start the server.
 cd BaSP-M2022-Etapa-\
 npm install -g http-server
 ```
-## Week two
-The HTML code of the website was formed.
+## Week One
+Web layout with the prototyping application Figma. :wrench:
 
-## Week three
+## Week Two
+The HTML code of the website was formed. :wrench:
 
-The HTML code was styled.
+## Week Three
+The HTML code was styled. :wrench:
+
+## Week Four
+Redo the styles with flexbox.  :wrench:
+Code reuse, multiple css files. :muscle:
+Upload our web application to the github-page servers. :newspaper:
