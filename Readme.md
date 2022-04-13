@@ -13,14 +13,18 @@ npm install -g http-server
 ```
 ## Week One
 Web layout with the prototyping application Figma. :wrench:
+In Figma
 
 ## Week Two
 The HTML code of the website was formed. :wrench:
+Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-01/
 
 ## Week Three
 The HTML code was styled. :wrench:
+Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-03/
 
 ## Week Four
 Redo the styles with flexbox.  :wrench:
 Code reuse, multiple css files. :muscle:
 Upload our web application to the github-page servers. :newspaper:
+Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-04/
