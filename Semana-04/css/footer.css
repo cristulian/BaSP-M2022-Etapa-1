@@ -1,21 +1,17 @@
-footer{
-    
+.social-media a {
+    margin-right: 20px;
 }
-footer div{
-    
-}
-footer .social-media{
+.social-media,
+.city,
+.copyright {
     display:flex;
     justify-content: center;
 }
-
-footer .city{
-    display:flex;
-    justify-content: center;
-    
+.city,
+.copyright {
+    line-height: 30px;
 }
-footer .copyright{
-    display:flex;
-    justify-content: center;
-    
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
 }

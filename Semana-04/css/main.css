@@ -10,7 +10,6 @@
   align-content: center;
   display:flex;
   flex-direction:column;
-  justify-content:center;
   text-align: center;
   width: 100%;
 }
@@ -86,19 +85,18 @@
     text-transform: uppercase;
   }
 .green-background{
-    width:85%;
     line-height: 30px;
     padding: 2%;
     display:flex;
     justify-content:center;
     flex-direction:column;
     align-content: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
     background-color:#AACE9B;
-    margin: 3%;
     border-bottom: 1px solid black;
+}
+.green-background ul {
+  list-style: inside;
 }
 .who-we-are-paragraph{
     width:85%;
@@ -281,12 +279,14 @@ section ol{
   .functionalities-box div {
     flex-basis: 10rem;
   }
-  .our-job {
+  .our-job,
+  .functionalities-buttons,
+  .green-background {
     margin-left: 20vw;
+    margin-right: 20vw;
   }
   .functionalities-buttons {
     flex-direction: row;
-    margin-left: 20vw;
   }
   .functionalities-buttons div {
     flex-wrap: nowrap;
