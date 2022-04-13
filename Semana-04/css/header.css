@@ -5,7 +5,6 @@
     flex-direction: row;
     height: 117px;
     justify-content: center;
-    position: fixed;
     width: 100vw;
     z-index: 2;
 }
@@ -33,6 +32,10 @@
 .title-1 {
     color: white;
 }
+.title-2 {
+    color: black;
+    text-transform: uppercase;
+}
 .header {
     display: flex;
     align-items: center;
@@ -54,6 +57,9 @@
 }
 
 @media (min-width: 769px) {
+    .aside {
+        padding-top: 110px;
+    }
     .header {
         justify-content: flex-start;
         padding-left: 100px;

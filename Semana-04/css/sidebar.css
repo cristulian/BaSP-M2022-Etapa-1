@@ -2,10 +2,9 @@ aside {
     background: #49A37B;
     background: linear-gradient(to bottom, #49A37B, #add6c4);
     display: none;
-    height: 100vh;
     padding-left: 1rem;
-    padding-top: 4rem;
-    position: fixed;
+    padding-bottom: 20px;
+    position: absolute;
     width: 15vw;
     z-index: 1;
 }
