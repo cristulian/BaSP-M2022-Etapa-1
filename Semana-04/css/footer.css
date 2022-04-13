@@ -1,0 +1,21 @@
+footer{
+    
+}
+footer div{
+    
+}
+footer .social-media{
+    display:flex;
+    justify-content: center;
+}
+
+footer .city{
+    display:flex;
+    justify-content: center;
+    
+}
+footer .copyright{
+    display:flex;
+    justify-content: center;
+    
+}
