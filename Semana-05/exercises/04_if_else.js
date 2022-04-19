@@ -10,7 +10,7 @@ if (a>=0.5){
 console.log(" Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes mensajes de alerta:");
 
 var Age;
-Age=60;
+Age=Math.round((Math.random(1)*100))
 
 console.log(" “Bebe” si la edad es menor a 2 años;");
 
@@ -49,5 +49,23 @@ if (Age>=61 && Age <= 75){
 console.log(" “Anciano” si es mayor a 75 años.");
 
 if (Age>75){
+    console.log('Anciano: ', Age);
+}
+
+// ALL IN ONE
+
+if (Age<2){
+    console.log('Bebe: ', Age);
+}else if (Age>=2 && Age <= 12){
+    console.log('Niño: ', Age);
+}else if (Age>=13 && Age <= 19){
+    console.log('Adolescente: ', Age);
+}else if (Age>=20 && Age <= 30){
+    console.log('Joven: ', Age);
+}else if (Age>=31 && Age <= 60){
+    console.log('Adulto: ', Age);
+}else if (Age>=61 && Age <= 75){
+    console.log('Adulto mayor: ', Age);
+}else if (Age>75){
     console.log('Anciano: ', Age);
 }
