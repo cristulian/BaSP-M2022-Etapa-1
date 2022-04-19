@@ -1,0 +1,17 @@
+.social-media a {
+    margin-right: 20px;
+}
+.social-media,
+.city,
+.copyright {
+    display:flex;
+    justify-content: center;
+}
+.city,
+.copyright {
+    line-height: 30px;
+}
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+}

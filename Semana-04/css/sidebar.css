@@ -1,0 +1,26 @@
+aside {
+    background: #49A37B;
+    background: linear-gradient(to bottom, #49A37B, #add6c4);
+    display: none;
+    padding-left: 1rem;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 15vw;
+    z-index: 1;
+}
+aside li{
+    margin-top: 1rem;
+}
+aside a{
+    color: black;
+    text-transform: uppercase;    
+}
+aside a:hover{
+    border-bottom: black solid 1px;
+}
+@media (min-width: 768px) {
+    aside {
+        display: flex;
+         
+    }
+}
