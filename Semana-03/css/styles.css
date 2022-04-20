@@ -152,27 +152,6 @@ h4 {
   width: 81px;
   height: 182px;
 }
-.functionalities-buttons{
-  position:relative;
-  display: block;
-  width: 100%;
-}
-.functionalities-buttons button{
-  display: inline-block;
-  width: 180px;
-  height: 180px;
-  margin-left: 5%;
-  background-color:#49A37B;
-  background: linear-gradient(to bottom,  #49A37B,  #add6c4);
-  border: none;
-  font-weight: bold;
-  font-size: 22px;
-  color:#FFF;
-  text-transform: uppercase;
-}
-.functionalities-buttons button:first-child{
-  margin-left: 20%;
-}
 .green-background {
   position: relative;
   width: 1000px;
