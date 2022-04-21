@@ -33,3 +33,13 @@ Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-04/
 Resolution of javascript exercises.  :wrench:
 Fixed bugs from week four. :muscle:
 Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-05/ 
+
+## Week Six
+Reuse of code from week four.
+Functionality is added to the landing page, with JavaScript. :zap:
+New Views, Styles, JavaScript, Assets folders. :file_folder:
+Page index.html change to landing.html.
+Two new pages, Login and Sing-Up. :eyes:
+
+
+Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-06/ 
