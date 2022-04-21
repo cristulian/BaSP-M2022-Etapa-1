@@ -42,4 +42,4 @@ Page index.html change to landing.html.
 Two new pages, Login and Sing-Up. :eyes:
 
 
-Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-06/ 
+Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-06/views/landing.html
