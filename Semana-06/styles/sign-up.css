@@ -264,5 +264,7 @@ section ol{
   display: none;
 }
 .form-email{
+  display:flex;
   margin-bottom: 50px;
+  justify-content: center;
 }
