@@ -1,0 +1,268 @@
+.our-job {
+  text-align: center;
+}
+.our-job p {
+  font-size: 20px;
+  line-height: 28px;
+}
+.functionalities-buttons{
+  align-content: center;
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  width: 100%;
+}
+.functionalities-buttons button {
+  background: linear-gradient(to bottom,  #49A37B,  #add6c4);
+  border: none;
+  color:#FFF;
+  font-size: 22px;
+  font-weight: bold;
+  height: 100px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  width: 216px;
+}
+.functionalities-buttons div {
+  justify-content: space-around;
+}
+.form-title {
+    padding: 20px;
+    background-color: #FFF;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: #373867;
+    margin: 3%;
+  }
+  .form-body {
+    background-color: #AACE9B;
+    margin: 3%;
+  }
+  .form-body input[type=text] {
+    width: 98%;
+    height: 50px;
+    background-color: #AACE9B;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+  }
+
+  .form-body input[type=radio] {
+    display: inline-block;
+    width: 10%;
+    height: 15px;
+    border: none;
+  }
+  .form-body textarea {
+    width: 99%;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#AACE9B;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+  }
+  .form-button {
+    width: 100%;
+    background-color:#AACE9B;
+    border: none;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+.green-background{
+    line-height: 30px;
+    padding: 2%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-content: center;
+    text-align: left;
+    background-color:#AACE9B;
+    border-bottom: 1px solid black;
+}
+.green-background ul {
+  list-style: inside;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.content {
+  width: 100vw;
+  padding: 3.125rem 1rem;
+}
+h1{
+  font-size: 28px;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  text-align: center;
+  width: 100%;
+}
+h2{
+  font-weight: bold;
+  text-align: center; 
+ }
+h3{
+    font-size: 24px;
+    font-weight: 500;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    position: relative;
+    text-align: center;
+ }
+ h4{
+    align-content: center;
+    display:flex;
+    font-size: 24px;
+    font-weight: bold;
+    justify-content:center;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .our-job {
+    background: #aace9b;
+    display: flex;
+    border-radius: 10px;
+    padding: 5%;
+}
+.functionalities-big-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.functionalities-big-box div {
+    flex-basis: 12rem;
+    height: 8rem;
+    margin: 1%;
+    background: linear-gradient(to bottom, #49A37B, #add6c4);
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+.functionalities-big-box .functionalities-box {
+    display: flex;
+    justify-content: center;
+}
+#site-map div li {
+    list-style-type: numbers;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+  }
+section ol{
+    text-align: center;
+}
+.main-footer {
+    display: block;
+    padding-top: 30px;
+    text-align:center;
+  }
+  .social-media img{
+   width: 45px;
+   height: 45px;
+  }
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-content-center {
+  justify-content: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.secondary-logo {
+  height: auto;
+  width: 18%;
+}
+@media (min-width: 768px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+  .content {
+    width: 80vw;
+    margin-left: 15vw;
+  }
+  h2 {
+      font-size: 1.5rem;
+  }
+  .functionalities-box div {
+    flex-basis: 10rem;
+  }
+  .our-job,
+  .functionalities-buttons,
+  .green-background {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+  .functionalities-buttons {
+    flex-direction: row;
+  }
+  .functionalities-buttons div {
+    flex-wrap: nowrap;
+  }
+  .functionalities-buttons button {
+    margin-right: 10%;
+  }
+}
+.form {
+  background: #AACE9B;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 240px;
+  height: 60px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.error {
+  color: red;
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.form-email{
+  margin-bottom: 50px;
+}
