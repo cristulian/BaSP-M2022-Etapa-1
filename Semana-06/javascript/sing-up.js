@@ -47,4 +47,12 @@ window.onLoad = () => {
 
     validateIsNotEmptyField('birthdate');
     validateIsNotEmptyField('tel');
+    validateIsNotEmptyField('adress');
+    validateIsNotEmptyField('location');
+    validateIsNotEmptyField('postcode');
+    validateIsNotEmptyField('email');
+    validateIsNotEmptyField('password');
+    validateIsNotEmptyField('confirmpassword');
+    validateIsNotEmptyField('confirmemail');
+    
   }
