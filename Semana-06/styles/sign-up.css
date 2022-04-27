@@ -241,8 +241,14 @@ section ol{
   border: 0;
   width: 240px;
   height: 60px;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   margin-left: 10px;
+}
+.error{
+  margin-top:2px;
+  font-size: medium;
+  
 }
 .label {
   display: block;

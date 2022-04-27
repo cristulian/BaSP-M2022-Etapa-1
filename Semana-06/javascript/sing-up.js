@@ -34,12 +34,23 @@ window.onLoad = () => {
       addHiddenClass(errorId);
     } 
   }
+  function validateLenght(id,a){
+    const field = getDomElementValue(`#${id}`);
+    const errorId = `#${id}-error`;
+
+    if (field.length >= a) {
+      removeHiddenClass(errorId);
+    } else {
+      addHiddenClass(errorId);
+    }
+
   function onSubmit(event) {
     event.stopPropagation();
     event.preventDefault();
     // validar los campos
 
     validateIsNotEmptyField('name');
+    validateLenght('name',3);
     validateIsNotEmptyField('lastname');
 
     validateIsNotEmptyField('id');
