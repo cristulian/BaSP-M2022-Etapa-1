@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/reset.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/footer.css" type="text/css">
+        <link rel="stylesheet" href="../styles/header.css" type="text/css">
+        <link rel="stylesheet" href="../styles/sidebar.css" type="text/css">
+        <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+        <link rel="stylesheet" href="../styles/sign-up.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../javascript/contact.js"></script>
+        <script src="../javascript/login.js"></script>
+        <script src="../javascript/sing-up.js"></script>
+        <title>Sing-up</title>
+     <header class="header">
+      <button class="btn-burger">
+        <img  class="burger-menu" src="../assets/burger-menu.png" alt="">   
+      </button>
+      <div class="header-wrapper">
+        <div class="flex flex-content-center">
+          <img class="menu" id="Menu" src="../assets/Union.png" title="Menu" alt="Menu">
+          <div class="header-title">
+            <h1 class="title-1">Trackgenix</h1>
+            <img src="../assets/clock.png" class="image-clock" title="Clock" alt="Clock">
+          </div>
+        </div>
+        <div class="header-subtitle flex flex-content-center">
+            <p>The time is yours, but we help it</p>
+        </div>
+      </div>
+      <ul class="header-links">
+        <li><a class="header-links-item" href="#Our-job">Our Job</a></li>
+        <li><a class="header-links-item" href="#Functionalities">Functionalities</a></li>
+        <li><a class="header-links-item" href="#Why-us">Why us</a></li>
+        <li><a class="header-links-item" href="#Contact-us">Contact us</a></li>
+        <li><a class="header-links-item" href="#Who-we-are">who whe are</a></li>
+        <li><a class="header-links-item" href="#Site-map">site map</a></li>
+      </ul>
+    </header>
+    <aside class="sidebar">
+      <ul>
+        <li><a href="landing.html">HOME</a></li>
+        <li><a href="sign-up.html">SIGN UP</a></li>
+        <li><a href="login.html">LOG IN</a></li>
+        <li><a href="#Contact-us">CONTACT US</a></li>
+      </ul>
+    </aside>
+    <h1 class="title-2">
+      Trackgenix
+      <img src="../assets/clock.png" class="image-clock" class="image-clock" title="Clock" alt="Clock">
+    </h1>
+</head>
+<body>
+  <form class="form" onsubmit="onSubmit(event)">
+    <fieldset class="fieldset">
+      <label class="label" for="name">First name</label>
+      <input id="name" type="text" placeholder="First name here">
+      <span id="name-error" class="hidden error">First name is required</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="lastname">Last name</label>
+      <input id="lastname" type="text" placeholder="Last name here">
+      <span id="lastname-error" class="hidden error">Last name is required</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="id">DNI</label>
+      <input id="id" type="number" placeholder="DNI here">
+      <span id="id-error" class="hidden error">ID is required</div>
+      <span id="id-error-2" class="hidden error">Minimum 8 characters</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="birthdate">Birthday</label>
+      <input id="birthdate" type="date" placeholder="Birthday here">
+      <span id="birthdate-error" class="hidden error">Birthday is required</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="tel">Phone Number</label>
+      <input id="tel" type="tel" placeholder="Phone here">
+      <span id="tel-error" class="hidden error">Tel is required</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="adress">Adress</label>
+      <input id="adress" type="text" placeholder="Adress here">
+      <span id="adress-error" class="hidden error">Address is required</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="location">Location</label>
+      <input id="location" type="text" placeholder="Location here">
+      <span id="location-error" class="hidden error">Location is required</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="postcode">Post Code</label>
+      <input id="postcode" type="number" placeholder="Post Code here">
+      <span id="postcode-error" class="hidden error">Post Code is required</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="email">Email</label>
+      <input id="email" type="email" placeholder="Email here">
+      <span id="email-error" class="hidden error">Email required</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="confirmemail">Confirm Email</label>
+      <input id="confirmemail" type="email" placeholder="Confirm Email here">
+      <span id="confirmemail-error" class="hidden error">Cornfirm Email required</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="confirmpassword">Password</label>
+      <input id="password" type="password" placeholder="Password here">
+      <span id="password-error" class="hidden error">Password required</div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <label class="label" for="confirmpassword">Confirm Password</label>
+      <input id="confirmpassword" type="password" placeholder="Cornfirm Password here">
+      <span id="confirmpassword-error" class="hidden error">Cornfirm Password required</div>
+    </fieldset>
+    
+    <div class="controls">
+      <button type="submit">Guardar</button>
+    </div>
+  </form>
+</body>
+<footer> 
+  <div class="social-media">
+    <a href="Instagram"><img src="../assets/Instagram_black.png" alt="Instagram"></a>  
+    <a href="Linkedin"><img src="../assets/LinkedIN_black.png" alt="Linkedin"></a> 
+    <a href="#Facebook"><img src="../assets/Facebook_black.png" alt="Facebook"></a>  
+    <a href="GitHub"><img src="../assets/Github_black.png" alt="GitHub"></a>  
+    <a href="Twitter"><img src="../assets/Twitter_black.png" alt="Twitter"></a>  
+  </div>
+  <div class="city">
+    <p>Rosario, Argentina</p>
+  </div>
+  <div class="copyright">
+    <p>Copyright © 2022 Trackgenix SA.</p>
+    <p>All rights reserved</p>
+  </div>
+</footer>
+</body>
+</html>
