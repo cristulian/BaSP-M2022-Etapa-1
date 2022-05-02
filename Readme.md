@@ -17,7 +17,11 @@ npm install -g http-server
 
 ## Week Two
 - The HTML code of the website was formed. :wrench:
-- Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-01/
+- Page: 
+```sh
+- https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-01/
+```
+
 
 ## Week Three
 - The HTML code was styled. :wrench:
