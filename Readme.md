@@ -16,34 +16,34 @@ Web layout with the prototyping application Figma. :wrench:
 In Figma
 
 ## Week Two
-The HTML code of the website was formed. :wrench:
-Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-01/
+-The HTML code of the website was formed. :wrench:
+-Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-01/
 
 ## Week Three
-The HTML code was styled. :wrench:
-Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-03/
+-The HTML code was styled. :wrench:
+-Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-03/
 
 ## Week Four
-Redo the styles with flexbox.  :wrench:
-Code reuse, multiple css files. :muscle:
-Upload our web application to the github-page servers. :newspaper:
-Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-04/
+-Redo the styles with flexbox.  :wrench:
+-Code reuse, multiple css files. :muscle:
+-Upload our web application to the github-page servers. :newspaper:
+-Page: https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-04/
 
 ## Week Five
-Resolution of javascript exercises.  :wrench:
-Fixed bugs from week four. :muscle:
-Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-05/ 
+-Resolution of javascript exercises.  :wrench:
+-Fixed bugs from week four. :muscle:
+-Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-05/ 
 
 ## Week Six
-Reuse of code from week four.
-Functionality is added to the landing page, with JavaScript. :zap:
-New Views, Styles, JavaScript, Assets folders. :file_folder:
-Page index.html change to landing.html.
-Two new pages, Login and Sing-Up. :eyes:
-Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-06/views/landing.html
+-Reuse of code from week four.
+-Functionality is added to the landing page, with JavaScript. :zap:
+-New Views, Styles, JavaScript, Assets folders. :file_folder:
+-Page index.html change to landing.html.
+-Two new pages, Login and Sing-Up. :eyes:
+-Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-06/views/landing.html
 
 ## Week Seven
-Reuse of code from week Six.
-Bug fixes last week. 🔧
-Make requests to a server from the forms of week 06
-Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-07/views/landing.html
+-Reuse of code from week Six.
+-Bug fixes last week. 🔧
+-Make requests to a server from the forms of week 06
+-Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-07/views/landing.html
