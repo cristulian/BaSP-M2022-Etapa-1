@@ -1,60 +1,84 @@
-var loginSubmit = document.getElementById("loginSubmit");
+const validateLetterNum  = function (string) {
+	let hasNumber = false;
+	let hasLetter = false;
+	let stringIndex = 0;
 
-function validationLetterNum(string){
-    var hasNumber = false;
-    var hasLetter = false;
-    for (var i = 0; i < string.lenght; i++){
-        const element = string[i];
-        if (isNaN(element)){
-            hasLetter = true;
-        }
-        if (!isNaN(element)){
-            hasNumber = true;
-        }
-    }
-    return hasLetter && hasNumber;
+	if (!string) return;
+
+	for (stringIndex; stringIndex < string.length; stringIndex += 1) {
+		let element = string[stringIndex];
+
+		if (isNaN(element)) {
+				hasLetter = true;
+		}
+
+		if (!isNaN(element)) {
+				hasNumber = true;
+		} 
+	}
+
+	return hasLetter && hasNumber;
+}
+const hasEmailFormat = function (email) {
+	return email.length > 10 && email.includes('@') && email.includes('.com');
 }
 
-function validateEmail(email){
-    var emailConditions = /[a-z0-9]+@[a-z]+.[a-z]{2,3}/;
-    return emailConditions.test(email);
+const validateEmail = function(email, emailError) {
+	if (!email) return;
+	if (!hasEmailFormat(email)) {
+		emailError.style.visibility = "visible";
+		email.classList = "invalid-input";
+	}
 }
 
+const validatePassword = function(password, passwordError) {
+	if (!password) return;
+	if (!validateLetterNum(password)) {
+		passwordError.style.visibility = "visible";
+		password.classList = "invalid-input";
+	}
+}
 
-window.onload = function(){
+window.onload = function () {
+	let email = document.querySelector(".email-field");
+	let password = document.querySelector(".password-field");
+	let emailError = document.querySelector(".email-error");
+	let passwordError = document.querySelector(".password-error");
 
-    var email = document.getElementsByClassName("email-field")[0];
-    var password = document.getElementsByClassName("password-field")[0];
-    var emailError = document.getElementsByClassName("email-na")[0];
-    var passwordError = document.getElementsByClassName("password-na")[0];
+  email.addEventListener("blur", (event) => validateEmail(event.target.value, emailError));
+	email.addEventListener("focus", function () {
+		emailError.style.visibility = "hidden";
+		email.classList -= "invalid-input";
+	});
 
-    console.log(email);
+  password.addEventListener("blur", (event) => validatePassword(event.target.value, passwordError));
+	password.addEventListener("focus", function () {
+		passwordError.style.visibility = "hidden";
+		password.classList -= "invalid-input";
+	});
+}
 
-    function emailNA(e){
-        if (validateEmail(email.value) == false){
-            emailError.style.visibility = "visible";
-            email.classList = "invalid-input";
-        }
-    }
-    
-    function passwordNA(e){
-        if (validationLetterNum(password.value) == false){
-            passwordError.style.visibility = "visible";
-            password.classList = "invalid-input";
-        }
-    }
+function onSubmit(event) {
+	event.stopPropagation();
+	event.preventDefault();
 
-    email.addEventListener("blur", emailNA);
+	const email = event.target[1].value;
+	const password = event.target[2].value;
 
-    email.addEventListener("focus", function(){
-        emailError.style.visibility = "hidden";
-        email.classList -= "invalid-input";
-    });
+	let url = 'https://basp-m2022-api-rest-server.herokuapp.com/login?';
+	url += `email=${email}`;
+	url += `&password=${password}`;
 
-    password.addEventListener("blur", passwordNA);
-
-    password.addEventListener("focus", function(){
-        passwordError.style.visibility = "hidden";
-        password.classList -= "invalid-input";
-    });
+	fetch(url)
+		.then(response => response.json())
+		.then((data) => {
+			if (data.success) {
+				alert('Login success');
+			} else {
+				const errors = data.errors ? data.errors.map(({ msg }) => msg) : data.msg;
+				
+				alert(data.errors ? errors.join('\n') : errors);
+			}
+		}
+	);
 }

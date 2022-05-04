@@ -283,13 +283,13 @@
     margin: 1% 0%;
 }
 
-.email-na{
+.email-error {
     width: 100%;
     visibility: hidden;
     color: #F13312; 
 }
 
-.password-na{
+.password-error {
     width: 100%;
     visibility: hidden;
     color: #F13312;
