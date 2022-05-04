@@ -85,9 +85,9 @@ function onSubmit(event) {
           localStorage.setItem('signup', JSON.stringify(person));
           alert('Person has been created');
         } else {
-          const errorMessages = data.errors.map(({ msg }) => msg);
+          const errorMessages = data.errors ? data.errors.map(({ msg }) => msg) : data.msg;
 
-          alert(errorMessages.join('\n'));
+          alert(data.errors ? errorMessages.join('\n') : errorMessages);
         }
       }
     );
