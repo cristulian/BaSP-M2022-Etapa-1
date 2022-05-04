@@ -83,6 +83,7 @@ function onSubmit(event) {
       .then((data) => {
         if (data.success) {
           localStorage.setItem('signup', JSON.stringify(person));
+          alert('Person has been created');
         } else {
           const errorMessages = data.errors.map(({ msg }) => msg);
 
