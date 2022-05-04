@@ -20,6 +20,7 @@ function validateEmail(email){
     return emailConditions.test(email);
 }
 
+
 window.onload = function(){
 
     var email = document.getElementsByClassName("email-field")[0];

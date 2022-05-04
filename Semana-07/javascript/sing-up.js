@@ -1,58 +1,94 @@
-window.onLoad = () => {
-    const test = () => {
-      console.log('change');
-    }
-    const name = document.getElementById('name').addEventListener('change', test);
-  }
-  
-  function getDomElementValue(id) {
-    return document.querySelector(id).value;
-  }
-  function removeHiddenClass(id) {
-    document.querySelector(id).classList.remove('hidden');
-  };
-  function addHiddenClass(id) {
-    document.querySelector(id).classList.add('hidden');
-  }
-  function validateIsNotEmptyField(id) {
-    const field = getDomElementValue(`#${id}`);
-    const errorId = `#${id}-error`;
+const keys = [
+  'name', 'lastName', 'dni', 'dob', 'phone','address',
+  'city','zip', 'email', 'password', 'confirmpassword', 'confirmemail'
+];
 
-    if (field === '') {
-      removeHiddenClass(errorId);
-    } else {
-      addHiddenClass(errorId);
-    }
+function getDomElementValue(id) {
+  return document.querySelector(id).value;
+}
+function removeHiddenClass(id) {
+  document.querySelector(id).classList.remove('hidden');
+};
+function addHiddenClass(id) {
+  document.querySelector(id).classList.add('hidden');
+}
+function validateIsNotEmptyField(id) {
+  const field = getDomElementValue(`#${id}`);
+  const errorId = `#${id}-error`;
+  let isValid = true;
+
+  if (field === '') {
+    removeHiddenClass(errorId);
+    isValid = false;
+  } else {
+    addHiddenClass(errorId);
   }
-  function validateIsDNI() {
-    const dni = getDomElementValue('#id');
-    const errorId = '#id-error-2';
 
-    if (dni.length < 8) {
-      removeHiddenClass(errorId);
-    } else {
-      addHiddenClass(errorId);
-    } 
-  }
-  function onSubmit(event) {
-    event.stopPropagation();
-    event.preventDefault();
-    // validar los campos
+  return isValid;
+}
 
-    validateIsNotEmptyField('name');
-    validateIsNotEmptyField('lastname');
+window.onload = () => {
+  const personFromLocalStorage = localStorage.getItem('signup');
 
-    validateIsNotEmptyField('id');
-    validateIsDNI();
-
-    validateIsNotEmptyField('birthdate');
-    validateIsNotEmptyField('tel');
-    validateIsNotEmptyField('adress');
-    validateIsNotEmptyField('location');
-    validateIsNotEmptyField('postcode');
-    validateIsNotEmptyField('email');
-    validateIsNotEmptyField('password');
-    validateIsNotEmptyField('confirmpassword');
-    validateIsNotEmptyField('confirmemail');
+  if (personFromLocalStorage) {
+    const person = JSON.parse(personFromLocalStorage);
     
+    keys.slice(0, keys.length - 2).forEach(field => {
+      let domNode = document.querySelector(`#${field}`);
+      domNode.value = person[field];
+    });
+
+    let confirmEmailDomNode = document.querySelector('#confirmemail');
+    confirmEmailDomNode.value = person['email'];
+    
+    let confirmPasswordDomNode = document.querySelector('#confirmpassword');
+    confirmPasswordDomNode.value = person['password'];
   }
+}
+
+function onSubmit(event) {
+  event.stopPropagation();
+  event.preventDefault();
+
+  let isValid = true;
+  let person = {};
+
+  keys.forEach((field) => {
+    person[field] = getDomElementValue(`#${field}`);
+
+    if (isValid && !validateIsNotEmptyField(field)) {
+      isValid = false;
+    };
+  });
+
+  if (isValid) {
+    let url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?';
+    let keysToSend = keys.slice(0, keys.length - 2);
+
+    keysToSend.forEach((field, index) => {
+      let value = person[field];
+      const connector = index === keys.length - 1? '' : '&';
+
+      if (field === 'dob') {
+        const date = value.split('-');
+        
+        value = `${date[1]}/${date[2]}/${date[0]}`
+      }
+
+      url += `${field}=${value}${connector}`;
+    });
+
+    fetch(url)
+      .then(response => response.json())
+      .then((data) => {
+        if (data.success) {
+          localStorage.setItem('signup', JSON.stringify(person));
+        } else {
+          const errorMessages = data.errors.map(({ msg }) => msg);
+
+          alert(errorMessages.join('\n'));
+        }
+      }
+    );
+  }
+}
