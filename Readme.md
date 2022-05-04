@@ -49,4 +49,4 @@ npm install -g http-server
 - Reuse of code from week Six.
 - Bug fixes last week. 🔧
 - Make requests to a server from the forms of week 06
-- Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-07/views/landing.html
+- Page :newspaper: : https://cristulian.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html
